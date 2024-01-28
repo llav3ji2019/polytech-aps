@@ -1,0 +1,95 @@
+spring:
+  liquibase:
+    change-log: db/changelog-master.yaml
+    enabled: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5434/aps
+    username: admin
+    password: admin
+
+  jpa:
+    show-sql: true
+
+    hibernate:
+      ddl-auto: create
+
+## Variant 1
+##======49%======
+
+#env:
+#  srcAmount: 7
+#  deviceAmount: 1
+#  requestAmount: 6000
+#  maxBufferSize: 3
+#
+#statistic:
+#  a: 1
+#  b: 3
+#  lambda: 2
+
+##======30%======
+
+#env:
+#  srcAmount: 7
+#  deviceAmount: 2
+#  requestAmount: 6000
+#  maxBufferSize: 3
+#
+#statistic:
+#  a: 1
+#  b: 3
+#  lambda: 2
+
+##======9%======
+
+#env:
+#  srcAmount: 7
+#  deviceAmount: 3
+#  requestAmount: 6000
+#  maxBufferSize: 6
+#
+#statistic:
+#  a: 1
+#  b: 3
+#  lambda: 2
+
+## Variant 2
+
+##======43%======
+env:
+  srcAmount: 20
+  deviceAmount: 1
+  requestAmount: 6000
+  maxBufferSize: 3
+
+statistic:
+  a: 3
+  b: 6
+  lambda: 5
+
+##======25%======
+
+#env:
+#  srcAmount: 20
+#  deviceAmount: 2
+#  requestAmount: 6000
+#  maxBufferSize: 3
+#
+#statistic:
+#  a: 2
+#  b: 3
+#  lambda: 5
+
+#======8%======
+
+#env:
+#  srcAmount: 20
+#  deviceAmount: 3
+#  requestAmount: 10000
+#  maxBufferSize: 5
+#
+#statistic:
+#  a: 2
+#  b: 3
+#  lambda: 5
