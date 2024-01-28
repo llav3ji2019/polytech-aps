@@ -48,6 +48,7 @@
 * JPA (Hibernate ORM)
 * Gradle
 * Docker-compose
+* Liquebase
 * SQL
 * PostgreSQL
 * Lombok.
