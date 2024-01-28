@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/001-init-application-statistic_table.sql
+
+  - include:
+      file: db/changelog/002-init-device-statistic_table.sql
+
+  - include:
+      file: db/changelog/003-init-source-statistic_table.sql
